@@ -1,0 +1,233 @@
+:root {
+    --button-color: hsl(223, 87%, 63%);
+    --button-hover: hsl(223, 100%, 88%);
+    --error-color: hsl(354, 100%, 66%);
+
+    --dark-blue: hsl(209, 33%, 12%);
+    --gray: hsl(0, 0%, 59%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: 'Libre Franklin', sans-serif;
+    width: 1440px;
+    height: 100%;
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    margin: 100px;
+}
+
+.header {
+    align-self: center;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.header-sub {
+    margin-bottom: 30px;
+}
+
+.mail  {
+    padding: 15px 20px;
+    width: 20vw;
+    text-align: left;
+    border-radius: 40px;
+}
+
+.mail:focus {
+    outline: none;
+}
+
+.error {
+    padding: 15px 20px;
+    width: 20vw;
+    text-align: left;
+    border-radius: 40px;
+    border: 2px solid var(--error-color);
+}
+
+.error:focus {
+    outline: none;
+}
+
+
+#error-text {
+    color: var(--error-color);
+    font-size: 12px;
+    align-self: flex-end;
+    margin-top: 5px;
+}
+
+.btn {
+    padding: 15px 20px;
+    width: 10vw;
+    border-radius: 40px;
+    background-color: var(--button-color);
+    color: white;
+}
+
+.btn:hover {
+    background-color: var(--button-hover);
+    border: none;
+    outline: none;
+}
+
+.header-main {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.bolder {
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+
+
+.header h1 {
+    font-weight: 500;
+}
+
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.mail-container {
+    align-self: center;
+    text-align: center;
+}
+
+.ending {
+    align-self: center;
+    text-align: center;
+}
+
+.illustration {
+    align-self: center;
+    width: 500px;
+}
+
+.fa {
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px 5px 20px 5px;
+}
+
+.fa:hover {
+    background-color: blue;
+    color: white;
+}
+
+.fa-facebook {
+    background-color: white;
+    color: blue;
+}
+
+.fa-instagram {
+    background-color: white;
+    color: blue;
+}
+
+.fa-twitter {
+    background-color: white;
+    color: blue;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        height: 130vh;
+        min-height: 100vh;
+        width: 75vw;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header {
+        margin-top: 80px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-main {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        width: 70vw;
+        margin-top: 15px;
+    }
+
+    .mail {
+        width: 70vw;
+    }
+
+    .error {
+        width: 70vw;
+    }
+
+    .mail-container {
+        align-self: center;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ending {
+        align-self: center;
+        text-align: center;
+    }
+
+}
+
+
+
+/*Footer*/
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    color: #223344;
+}
+.attribution a {
+    color: coral;
+    font-weight: 900;
+    text-decoration: none;
+}
