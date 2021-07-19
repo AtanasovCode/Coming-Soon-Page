@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
        e.preventDefault();
        const mail = document.getElementById("mail").value;
 
-       const textEmpty = "Cannot be empty";
-       const textFalse = "Please enter a valid email";
+       const textEmpty = "Whoops! It looks like you forgot to add your email";
+       const textFalse = "Please provide a valid email address";
 
        if(mail==='' || mail.trim() === '') {
            document.getElementById("mail").className="error";
